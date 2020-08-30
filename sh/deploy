@@ -1,0 +1,21 @@
+#!/usr/local/bin/bash
+
+GIT_REPO="ssh+git://git@github.com/mkastner/der-markt.git"
+
+APP_NAME="der-markt"
+
+ROOT_PATH="/home/webhost/www/www.der-markt.com"
+SSH_HOST="webhost@www.der-markt.com"
+OTHER_SSH_PORT_PRODUCTION="2215"
+INSTALLATION_PATH="${ROOT_PATH_PRODUCTION}/${APP_NAME}"
+
+SSH_COMMAND="cd ${ROOT_PATH} && 
+  git clone -v --branch ${GIT_REPO} ${APP_NAME} && 
+  cd ${INSTALLATION_PATH} && 
+  sudo service nginx reload"
+
+echo SSH_COMMAND:
+echo $SSH_COMMAND
+
+ssh $SSH_PORT $SSH_HOST $SSH_COMMAND 
+
