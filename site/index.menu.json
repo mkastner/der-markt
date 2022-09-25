@@ -1,0 +1,23 @@
+[
+  {
+    "label": "Home",
+    "url": "https://www.der-markt.com"
+  },
+  {
+    "label": "Tagesgeldvergleich",
+    "url": "https://tagesgeld.der-markt.com/rechner/dermarkt/"
+  },
+  {
+    "label": "Festgeldvergleich",
+    "url": "https://festgeld.der-markt.com/rechner/dermarkt/"
+  },
+  {
+    "label": "Hypothekenvergleich",
+    "url": "https://hypotheken.der-markt.com/rechner/dermarkt/"
+  },
+  {
+    "label": "Bausparvergleich",
+    "url": "https://bausparen.der-markt.com/rechner/dermarkt/"
+  }
+]
+
