@@ -1,0 +1,35 @@
+// rgba(246, 172, 41, 0.7)
+// color scheme:
+// https://paletton.com/#uid=10T0u0kiAv78GP8d+EemwrnqrmV
+// https://paletton.com/#uid=13H0u0kiAv78GP8d+EemwrnqrmV
+// font stacks
+// https://www.sitepoint.com/eight-definitive-font-stacks-2/
+
+:root {
+  ---color__primary: #f8c568;
+  ---color__primary--dark: #b78120;
+  ---font-family__body: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  ---font-family__headline: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; 
+  --font-size: 1rem;
+  --font-size__medium: 1.4rem;
+  --font-size__big: 1.96rem; // * 1.4
+  --font-size__large: 2.744rem; // * 1.4 * 1.4
+  
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+  &__header {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.page__title {
+  color: var(---color__primary--dark);
+  font-family: var(---font-family__body);
+  font-size: 2.744rem;
+  margin: 0.5rem;
+  padding: 0;
+}

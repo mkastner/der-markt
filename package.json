@@ -1,0 +1,24 @@
+{
+  "name": "der-markt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git+ssh://git@github.com/mkastner/der-markt.git",
+  "author": "mtkastner <kastner@galt.de>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^4.2.1"
+  },
+  "scripts": {
+    "build-prod": "NODE_ENV=production yarn build-site"
+  },
+  "dependencies": {
+    "simple-site": "https://github.com/mkastner/simple-site.git#v0.0.27"
+  }
+
+}
