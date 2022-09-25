@@ -16,6 +16,21 @@
     <header class="page__header">
       <h1 class="page__title">der-markt.com</h1>
     </header>
+    <nav class="page__nav">
+      {{{menu}}}
+      <ul class="page__nav-list">
+        {{#each menu}}
+        <li class="page__nav-item">
+          <a
+            href="{{ this.url }}"
+            class="fmh-legal-links__list-link"
+            title="{{{ this.label }}}"
+            ><span class="page__nav-label">{{{ this.label }}}</span></a
+          >
+        </li>
+        {{/each}}
+      </ul>
+    </nav>
     {{{body}}}
   </body>
 </html>
