@@ -6,10 +6,10 @@
 // https://www.sitepoint.com/eight-definitive-font-stacks-2/
 
 :root {
-  ---color__primary: #f8c568;
-  ---color__primary--dark: #b78120;
-  ---font-family__body: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  ---font-family__headline: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; 
+  --color__primary: #f8c568;
+  --color__primary--dark: #b78120;
+  --font-family__body: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family__headline: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; 
   --font-size: 1rem;
   --font-size__medium: 1.4rem;
   --font-size__big: 1.96rem; // * 1.4
@@ -27,8 +27,8 @@
 }
 
 .page__title {
-  color: var(---color__primary--dark);
-  font-family: var(---font-family__body);
+  color: var(--color__primary--dark);
+  font-family: var(--font-family__body);
   font-size: 2.744rem;
   margin: 0.5rem;
   padding: 0;

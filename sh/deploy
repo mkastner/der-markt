@@ -1,24 +1,4 @@
-#!/usr/local/bin/bash
-
-GIT_REPO="https://github.com/mkastner/der-markt.git"
-
-APP_NAME="der-markt"
-
-BRANCH="master"
-
-ROOT_PATH="/home/webhost/www/www.der-markt.com"
-SSH_HOST="webhost@www.der-markt.com"
-SSH_PORT="2215"
-INSTALLATION_PATH="${ROOT_PATH}/${APP_NAME}"
-
-SSH_COMMAND="cd ${ROOT_PATH} &&
-  rm -fr ${INSTALLATION_PATH} &&
-  git clone --branch master ${GIT_REPO} &&
-  cd ${INSTALLATION_PATH} && 
-  sudo -S service nginx reload"
-
-echo SSH_COMMAND:
-echo $SSH_COMMAND
-
-ssh -p $SSH_PORT $SSH_HOST $SSH_COMMAND 
-
+#!/usr/bin/env bash
+/usr/bin/env rsync -avzh -e "ssh -p 2215"  --progress \
+  ~/projects/node.js/der-markt/docs/ \
+  webhost@www.galt.de:/home/webhost/www/www.der-markt.com/
