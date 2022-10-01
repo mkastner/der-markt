@@ -1,4 +1,4 @@
-{{#contentFor 'head:title'}} Zinsvergleiche – der-markt.com  {{/contentFor}}
+{{#contentFor 'head:title'}} Zinsvergleiche – der-markt.com {{/contentFor}}
 
 <main>
   <h1>der-markt.com - Zinsvergleiche</h1>
@@ -9,5 +9,32 @@
     </p>
   </article>
 
+  {{#eachAppTeaser}}
+    <section class='app-teaser'>
+      <h2>{{fillIn item.title}}</h2>
+      <form method='get' action="{{item.url}}">
+        {{#each item.params as |param key|}}
+          <fieldset>
+            <legend>{{param.label}}</legend>
+            {{#each param.options as |option index|}}
+              <input
+                  {{{ checked option.active }}} 
+                type='radio'
+                id='{{item.key}}-{{param.key}}-{{index}}'
+                name='{{param.key}}'
+                value='{{option.value}}'
+              />
+              <label
+                for='{{item.key}}-{{param.key}}-{{index}}'
+              >{{option.label}}</label>
+            {{/each}}
+          </fieldset>
+        {{/each}}
+        <input type='submit' value='Berechnung starten' />
+        <script>
+        </script>
+      </form>
+    </section>
+  {{/eachAppTeaser}}
   {{{htmlText}}}
 </main>
