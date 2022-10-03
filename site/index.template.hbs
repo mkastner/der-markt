@@ -1,38 +1,41 @@
-{{#contentFor 'head:title'}} Zinsvergleiche – der-markt.com {{/contentFor}}
+{{#contentFor "head:title"}} Zinsvergleiche – der-markt.com {{/contentFor}}
 
-<main>
-  <h1>der-markt.com - Zinsvergleiche</h1>
-  <article>
-    <h1>{{loaderData.title}}</h1>
+<main class="dm-main dm-layout">
+  <article class="dm-layout__item dm-layout__item--1">
+    <h1>der-markt.com - Zinsvergleiche</h1>
     <p>
       Inflation ist kein Phänomen der letzten Monate.
     </p>
   </article>
 
   {{#eachAppTeaser}}
-    <section class='app-teaser'>
-      <h2>{{fillIn item.title}}</h2>
-      <form method='get' action="{{item.url}}">
+    <section class="dm-app-teaser dm-layout__item dm-layout__item--4">
+      <h2 class="dm-title">{{fillIn item.title}}</h2>
+      <form method="get" action="{{item.url}}" class="dm-form dm-layout">
         {{#each item.params as |param key|}}
-          <fieldset>
-            <legend>{{param.label}}</legend>
+          <fieldset class="dm-fieldset dm-layout__item dm-layout__item--1">
+            <legend class="dm-legend">{{param.label}}</legend>
             {{#each param.options as |option index|}}
               <input
-                  {{{ checked option.active }}} 
-                type='radio'
-                id='{{item.key}}-{{param.key}}-{{index}}'
-                name='{{param.key}}'
-                value='{{option.value}}'
+                {{{checked option.active}}}
+                type="radio"
+                id="{{item.key}}-{{param.key}}-{{index}}"
+                name="{{param.key}}"
+                value="{{option.value}}"
+                class="dm-radio"
               />
               <label
-                for='{{item.key}}-{{param.key}}-{{index}}'
+                for="{{item.key}}-{{param.key}}-{{index}}"
+                class="dm-label"
               >{{option.label}}</label>
             {{/each}}
           </fieldset>
         {{/each}}
-        <input type='submit' value='Berechnung starten' />
-        <script>
-        </script>
+        <div class="dm-fieldset dm-layout__item dm-layout__item--1">
+          <button type="submit" class="dm-button">
+            Berechnung starten
+          </button>
+        </div>
       </form>
     </section>
   {{/eachAppTeaser}}

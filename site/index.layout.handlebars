@@ -11,21 +11,21 @@
     <script src="/index.js"></script>
     <title>{{{ block 'head:title' }}}</title>
   </head>
-  <body class="page">
-    <header class="page__header">
-      <h1 class="page__title">der-markt.com</h1>
+  <body class="dm-page">
+    <header class="dm-page__header">
+      <h1 class="dm-page__title">der-markt.com</h1>
     </header>
-    <nav class="page__nav">
-      <ul class="page__nav-list">
+    <nav class="dm-nav">
+      <ul class="dm-nav__list">
         {{#each menu}}
-        <li class="page__nav-item">
-          <a
-            href="{{ this.url }}"
-            class="fmh-legal-links__list-link"
-            title="{{{ this.label }}}"
-            ><span class="page__nav-label">{{{ this.label }}}</span></a
-          >
-        </li>
+          <li class="dm-nav__item">
+            <a
+              href="{{ this.url }}"
+              title="{{{ this.label }}}"
+              class="dm-nav__link {{this.key}}"
+              ><span>{{{ this.label }}}</span></a
+            >
+          </li>
         {{/each}}
       </ul>
     </nav>
