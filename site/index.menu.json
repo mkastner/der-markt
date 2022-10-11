@@ -5,24 +5,24 @@
     "url": "https://www.der-markt.com"
   },
   {
-    "label": "Tagesgeldvergleich",
+    "label": "Tagesgeld",
     "key": "tgv",
-    "url": "https://tagesgeld.der-markt.com/rechner/dermarkt/"
+    "url": "https://tagesgeld.der-markt.com/rechner/dermarkt/schnellcheck.aspx"
   },
   {
-    "label": "Festgeldvergleich",
+    "label": "Festgeld",
     "key": "fgv",
-    "url": "https://festgeld.der-markt.com/rechner/dermarkt/"
+    "url": "https://festgeld.der-markt.com/rechner/dermarkt/schnellcheck.aspx"
   },
   {
-    "label": "Hypothekenvergleich",
+    "label": "Hypotheken/Baugeld",
     "key": "hpv",
-    "url": "https://hypotheken.der-markt.com/rechner/dermarkt/"
+    "url": "https://hypotheken.der-markt.com/rechner/dermarkt/schnellcheck.aspx"
   },
   {
-    "label": "Bausparvergleich",
+    "label": "Bausparen",
     "key": "bsv",
-    "url": "https://bausparen.der-markt.com/dermarkt/"
+    "url": "https://bausparen.der-markt.com/dermarkt/schnellcheck.aspx"
   }
 ]
 

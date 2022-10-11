@@ -15,10 +15,12 @@
     "eslint-plugin-promise": "^4.2.1"
   },
   "scripts": {
-    "build-prod": "NODE_ENV=production yarn build-site"
+    "build": "yarn build:prod && yarn build:sitemap",
+    "build:prod": "NODE_ENV=production yarn build-site",
+    "build:sitemap": "NODE_ENV=production node lib/build-sitemap.js"
   },
   "dependencies": {
-    "simple-site": "https://github.com/mkastner/simple-site.git#v0.0.27"
+    "simple-site": "https://github.com/mkastner/simple-site.git#v0.0.28"
   }
 
 }

@@ -1,33 +1,35 @@
-{{#contentFor "head:title"}} Zinsvergleiche – der-markt.com {{/contentFor}}
+{{#contentFor "head:title"}} {{json loaderData}} Zinsvergleiche – der-markt.com {{/contentFor}}
 
 <main class="dm-main dm-layout">
   <article class="dm-layout__item dm-layout__item--1">
-    <h1>der-markt.com - Zinsvergleiche</h1>
-    <p>
-      Inflation ist kein Phänomen der letzten Monate.
+    <h1 class="dm-main__title">der-markt.com - sparen und investieren</h1>
+    <p class="dm-main__par">
+      Schulden vermeiden.
     </p>
   </article>
 
   {{#eachAppTeaser}}
     <section class="dm-app-teaser dm-layout__item dm-layout__item--4">
-      <h2 class="dm-title">{{fillIn item.title}}</h2>
+      <h2 class="dm-app-teaser__title">{{fillIn item.title}}</h2>
       <form method="get" action="{{item.url}}" class="dm-form dm-layout">
+
         {{#each item.params as |param key|}}
-          <fieldset class="dm-fieldset dm-layout__item dm-layout__item--1">
+          <fieldset class="dm-fieldset dm-layout__item dm-layout__item--2">
             <legend class="dm-legend">{{param.label}}</legend>
             {{#each param.options as |option index|}}
-              <input
-                {{{checked option.active}}}
-                type="radio"
-                id="{{item.key}}-{{param.key}}-{{index}}"
-                name="{{param.key}}"
-                value="{{option.value}}"
-                class="dm-radio"
-              />
               <label
-                for="{{item.key}}-{{param.key}}-{{index}}"
-                class="dm-label"
-              >{{option.label}}</label>
+                class="dm-label dm-form__label"
+                >
+                <input
+                  {{{checked option.active}}}
+                  type="radio"
+                  name="{{param.key}}"
+                  value="{{option.value}}"
+                  class="dm-radio"
+                />
+                <span class="dm-form__label-text"
+                  >{{option.label}}</span>
+              </label>
             {{/each}}
           </fieldset>
         {{/each}}

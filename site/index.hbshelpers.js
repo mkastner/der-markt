@@ -22,7 +22,7 @@ module.exports = {
     console.log('options', options.fn); 
 
     for (const [key, teaserDef] of Object.entries(AppTeaserDefs)) { 
-      result.push(options.fn({key, item: teaserDef}));
+      result.push(options.fn({appKey: key, item: teaserDef}));
     }
     return result.join(''); 
   },
