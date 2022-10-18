@@ -1883,9 +1883,9 @@ side-channel@^1.0.4:
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
 
-"simple-site@https://github.com/mkastner/simple-site.git#v0.0.28":
-  version "0.0.28"
-  resolved "https://github.com/mkastner/simple-site.git#2f7aeb1934a8d20d089c36b4aa8a0d0969ab0c84"
+"simple-site@https://github.com/mkastner/simple-site.git#v0.0.29":
+  version "0.0.29"
+  resolved "https://github.com/mkastner/simple-site.git#0507f5a8690d175ead7bc7b99e428bacef461ea9"
   dependencies:
     axios "^0.21.1"
     body-parser "^1.19.0"

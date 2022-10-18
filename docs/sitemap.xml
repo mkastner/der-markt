@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
       <loc>https://www.der-markt.com</loc>
-      <lastmod>2022-10-11</lastmod>
+      <lastmod>2022-10-18</lastmod>
       <changefreq>daily</changefreq>
       <priority>1</priority>
     </url>
     <url>
-      <loc>https://www.der-markt.com/templates/festgeld</loc>
-      <lastmod>2022-10-11</lastmod>
+      <loc>https://festgeld.der-markt.com/rechner/dermarkt/schnellcheck.aspx</loc>
+      <lastmod>2022-10-18</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.9</priority>
     </url>
     <url>
-      <loc>https://www.der-markt.com/templates/bausparen</loc>
-      <lastmod>2022-10-11</lastmod>
+      <loc>https://hypotheken.der-markt.com/rechner/dermarkt/schnellcheck.aspx</loc>
+      <lastmod>2022-10-18</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.9</priority>
     </url>
     <url>
-      <loc>https://www.der-markt.com/templates/tagesgeld</loc>
-      <lastmod>2022-10-11</lastmod>
+      <loc>https://tagesgeld.der-markt.com/rechner/dermarkt/schnellcheck.aspx</loc>
+      <lastmod>2022-10-18</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.9</priority>
     </url>
     <url>
-      <loc>https://www.der-markt.com/templates/hypotheken</loc>
-      <lastmod>2022-10-11</lastmod>
+      <loc>https://bausparen.der-markt.com/dermarkt/schnellcheck.aspx</loc>
+      <lastmod>2022-10-18</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.9</priority>
     </url>

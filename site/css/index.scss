@@ -50,6 +50,18 @@
   padding: 0;
 }
 
+.dm-page__title a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+.dm-page__title a:hover {
+  text-decoration: underline;
+}
+
 .dm-nav {
   padding: 0.5rem 1rem; 
   background-color: var(--color__primary--light);

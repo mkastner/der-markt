@@ -29,7 +29,7 @@ async function load() {
         Templates.forEach((templateItem) => {
           clos({
             fullData: Templates,
-            loaderData: { title: templateItem.permaName },
+            loaderData: { title: templateItem.title },
             pathSection: templateItem.permaName, //commendation.volume.year,
             length: Templates.length,
           });
