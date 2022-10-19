@@ -12,7 +12,6 @@
     <section class="dm-app-teaser dm-layout__item dm-layout__item--4">
       <h2 class="dm-app-teaser__title">{{fillIn item.title}}</h2>
       <form method="get" action="{{item.url}}" class="dm-form dm-layout">
-
         {{#each item.params as |param key|}}
           <fieldset class="dm-fieldset dm-layout__item dm-layout__item--2">
             <legend class="dm-legend">{{param.label}}</legend>
