@@ -6,4 +6,5 @@
 
 User-agent: *
 Disallow: /templates/
+Disallow: /google*
 Sitemap: https://www.der-markt.com/sitemap.xml
