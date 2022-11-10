@@ -1,22 +1,26 @@
-const axios = require("axios");
-const log = require("mk-log");
+const axios = require('axios');
+const log = require('mk-log');
 
 const Templates = [
   {
     title: 'Tagesgeldvergleich', 
-    permaName: "tagesgeld",
+    permaName: 'tagesgeld',
   },
   {
     title: 'Festgeldvergleich', 
-    permaName: "festgeld",
+    permaName: 'festgeld',
   },
   {
     title: 'Hypothekenvergleich', 
-    permaName: "hypotheken",
+    permaName: 'hypotheken',
   },
   {
     title: 'Bausparvergleich', 
     permaName: 'bausparen',
+  },
+  {
+    title: 'Ratenkreditvergleich', 
+    permaName: 'ratenkredit',
   },
 ];
 

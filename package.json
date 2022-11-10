@@ -5,22 +5,30 @@
   "repository": "git+ssh://git@github.com/mkastner/der-markt.git",
   "author": "mtkastner <kastner@galt.de>",
   "license": "MIT",
-  "devDependencies": {
+  "scripts": {
+    "build": "yarn build:site && yarn build:sitemap",
+    "build:site": "NODE_ENV=production yarn build-site",
+    "build:sitemap": "NODE_ENV=production node lib/build-sitemap.js",
+    "solid:start": "vite",
+    "solid:dev": "vite",
+    "solid:build": "vite build",
+    "solid:serve": "vite preview"
+  },
+  "dependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "babel-preset-solid": "^1.6.0",
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^8.2.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-promise": "^4.2.1"
-  },
-  "scripts": {
-    "build": "yarn build:site && yarn build:sitemap",
-    "build:site": "NODE_ENV=production yarn build-site",
-    "build:sitemap": "NODE_ENV=production node lib/build-sitemap.js"
-  },
-  "dependencies": {
-    "simple-site": "https://github.com/mkastner/simple-site.git#v0.0.29"
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-solid": "^0.7.4",
+    "simple-site": "https://github.com/mkastner/simple-site.git#v0.0.30",
+    "solid-js": "^1.5.1",
+    "vite": "^3.0.9",
+    "vite-plugin-solid": "^2.3.0"
   }
-
 }

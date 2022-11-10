@@ -1,0 +1,28 @@
+{
+  "singleQuote": true,
+  "onlyUseLocalVersion": false,
+  "arrowParens": "always",
+  "overrides": [
+    {
+      "files": [
+        "**/*.css",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.html",
+        "**/*.hbs",
+        "**/*.handlebars"
+      ],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ],
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "React"
+      }
+    ]
+  } 
+}

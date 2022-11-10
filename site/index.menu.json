@@ -15,6 +15,11 @@
     "url": "https://festgeld.der-markt.com/rechner/dermarkt/schnellcheck.aspx"
   },
   {
+    "label": "Ratenkredite",
+    "key": "rkv",
+    "url": "https://ratenkredit.der-markt.com/dermarkt/schnellcheck.aspx"
+  },
+  {
     "label": "Hypotheken/Baugeld",
     "key": "hpv",
     "url": "https://hypotheken.der-markt.com/rechner/dermarkt/schnellcheck.aspx"
